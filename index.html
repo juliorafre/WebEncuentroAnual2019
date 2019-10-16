@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b71c494e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/estilos.css">
+
+    <title>Encuentro Anual CITT 2019</title>
+
+    <style>
+        .timeline {
+            margin: 0 auto;
+            max-width: 730px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #999999;
+            top: 0;
+            bottom: 0;
+            left: 5;
+            margin-left: -2px;
+        }
+
+        .item {
+            position: relative;
+            background: transparent;
+            padding: 0 0 0 120px;
+            margin-top: 60px;
+        }
+
+        .event_day {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 120px;
+            height: 120px;
+            margin-left: -60px;
+            border-radius: 50%;
+            background: #999999;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .event_day p {
+            display: inline-block;
+
+
+        }
+
+        .event_day .day {
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: -10px;
+
+        }
+
+        .event_day .year {
+
+            font-size: 16px;
+            font-weight: lighter;
+        }
+
+        .item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 50%;
+            bottom: 0;
+            left: 0px;
+            margin-left: -17px;
+            margin-top: -25px;
+            background-color: #999999;
+            border: 4px solid #999999;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .last_item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: auto !important;
+            bottom: 0 !important;
+            left: 0px;
+            margin-left: -17px !important;
+            background-color: #999999;
+            border: 4px solid #999999;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .item .event_time {
+            margin-bottom: 30px;
+        }
+
+        .item .event_title {
+            color: #EE2B77;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .item ul li {
+            margin-bottom: 5px;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container-header">
+            <img class="header__img" src="img/icons/logoCITT.png" alt="Logo_Citt">
+
+            <img class="header__menu__icon" src="img/icons/bars-solid.svg" alt="menu">
+
+            <nav class="header__nav">
+                <ul class="header__nav__ul">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#encuentroAnual">Encuentro Anual 2019</a></li>
+                    <li><a href="#expositor">Expositor</a></li>
+                    <li><a href="#programa">Programa </a></li>
+                    <li><a href="#inscripcion">Inscripción</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+    </header>
+
+
+    <section class="hero">
+
+        <a target="_blank" href="http://131.221.32.116/inscripcion-evento-duoc-uc/111"><img class="banner__principal"
+                src="./img/bg/bg_EAC_Desktop.png" alt="Background_hero"></a>
+
+    </section>
+
+    <section class="hero__information" id="encuentroAnual">
+        <div class="container">
+            <h3 class="section_title">Acerca del <span>Encuentro Anual CITT 2019</span></h3>
+            <p class="hero__info__text">Actividad hito de la Escuela de Informática y Telecomunicaciones que se realiza
+                una vez al año y desde su
+                primera versión, en 2012 en Sede Concepción (2013 Sede Viña del Mar; 2014 Sede Puente Alto; 2015 San
+                Bernardo; 2016 Sede Plaza Oeste; 2017 Sede Antonio Varas; 2018 Sede San Joaquín), se ha ido posicionando
+                poco a poco como un referente en la industria TI de nuestro país.
+                <br>
+                <br>
+                Entre sus principales objetivos está el fortalecer la comunidad CITT de nuestra Institución, compartir
+                experiencias de aprendizaje, ampliar las redes de contacto y potenciar la vinculación con la sociedad.
+                Todo a partir de la Innovación y Transferencia Tecnológica.</p>
+            <div class="info">
+                <div class="info_box fecha__eac">
+                    <img src="./img/icons/calendar_icon.svg" alt="">
+                    <div class="info_box_text">
+                        <h4>FECHA</h4>
+                        <p>8 de Noviembre 2019</p>
+                    </div>
+                </div>
+                <div class="info_box horario__eac">
+                    <img src="./img/icons/time_icon.svg" alt="">
+                    <div class="info_box_text">
+                        <h4>HORARIO</h4>
+                        <p>8:30 a 17:00 Horas</p>
+                    </div>
+                </div>
+                <div class=" info_box lugar__eac">
+                    <img src="./img/icons/place_icon.svg" alt="">
+                    <div class="info_box_text">
+                        <h4>LUGAR: <br> DUOC UC SEDE MELIPILLA</h4>
+                        <p>Serrano 1105,
+                            Melipilla</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero_expositores" id="expositor">
+        <div class="container">
+            <h3 class="section_title">
+                Nuestro <span>Expositor</span>
+            </h3>
+            <div class="expositor">
+                <img src="img/speakers/JulianUgarte.png" alt="">
+                <div class="expositor__texto">
+                    <h2>JULIÁN UGARTE</h2>
+                    <h5>CEO DE SOCIALAB</h5>
+                    <p>
+                        Emprendedor Serial con vocación en el impacto positivo que generan los negocios en la sociedad.
+                        Julián es Co-Fundador y Director de Socialab, IF y FiiS, tres plataformas de Innovación y
+                        Emprendimiento reconocidas en América Latina, con presencia en 10 países.
+
+                    </p>
+                    <a target="_blank"
+                        href="https://cl.linkedin.com/in/juli%C3%A1n-ugarte-fuentes-28143517">LINKEDIN</a>
+
+                </div>
+
+
+                <!-- No eliminar los siguientes comentarios en caso de existir mas de un expositor -->
+
+                <!-- <div class="expositores">
+                <div class="expositor">
+                    <img src="./img/speakers/walter.jpg" alt="speaker">
+                    <div class="expositor__info">
+                        <h3 class="expositor__info__nombre">Walter Montenegro</h3>
+                        <p class="expositor__info__cargo">
+                            Gerente CyberSeguridad Cisco.
+                        </p>
+                    </div>
+                </div>
+                <div class="expositor">
+                    <img src="./img/speakers/walter.jpg" alt="speaker">
+                    <div class="expositor__info">
+                        <h3 class="expositor__info__nombre">Walter Montenegro</h3>
+                        <p class="expositor__info__cargo">
+                            Gerente CyberSeguridad Cisco.
+                        </p>
+                    </div>
+                </div>
+                <div class="expositor">
+                    <img src="./img/speakers/walter.jpg" alt="speaker">
+                    <div class="expositor__info">
+                        <h3 class="expositor__info__nombre">Walter Montenegro</h3>
+                        <p class="expositor__info__cargo">
+                            Gerente CyberSeguridad Cisco.
+                        </p>
+                    </div>
+                </div>
+                <div class="expositor">
+                    <img src="./img/speakers/walter.jpg" alt="speaker">
+                    <div class="expositor__info">
+                        <h3 class="expositor__info__nombre">Walter Montenegro</h3>
+                        <p class="expositor__info__cargo">
+                            Gerente CyberSeguridad Cisco.
+                        </p>
+                    </div>
+                </div>
+
+            </div> -->
+            </div>
+    </section>
+
+
+    <section class="hero_timeline" id="programa">
+        <div class="container">
+
+            <div class="timeline">
+                <div class="item first_item">
+                    <div class="event_day">
+                        <p>
+                            <span class="day">08</span>
+                            <br>
+                            <span class="year">Noviembre 2019</span>
+                        </p>
+                    </div>
+                    <p class="event_time">
+                        <i class="far fa-clock"></i> 8:30 a 10:00 hrs
+                    </p>
+                    <h3 class="event_title"> <i class="far fa-address-card"></i> "Acreditación"</h3>
+                    <ul>
+                        <li> <b>Lugar: </b> Hall Central</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p class="event_time">
+                        <i class="far fa-clock"></i> 10:00 a 10:30 hrs
+                    </p>
+                    <h3 class="event_title">Inauguración</h3>
+                    <ul>
+                        <li> <b>Lugar: </b> Escenario Central</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p class="event_time">
+                        <i class="far fa-clock"></i> 10:30 a 11:15 hrs
+                    </p>
+                    <h3 class="event_title">Desafío <b>CITT</b></h3>
+                    <ul>
+                        <li> <b>Lugar: </b> Escenario Central</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p class="event_time">
+                        <i class="far fa-clock"></i> 11:00 a 11:45 hrs
+                    </p>
+                    <h3 class="event_title">Conferencia Principal <b>Julián Ugarte</b></h3>
+                    <ul>
+                        <li> <b>Lugar: </b> Escenario Central</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p class="event_time">
+                        <i class="far fa-clock"></i> 11:45 a 13:30 hrs
+                    </p>
+                    <h3 class="event_title">Feria de Proyectos Tecnológicos </h3>
+                    <ul>
+                        <li> <b>Lugar: </b> Cancha</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <p class="event_time">
+                        <i class="far fa-clock"></i> 13:30 a 14:30 hrs
+                    </p>
+                    <h3 class="event_title"> <i class="fas fa-utensils"></i> Almuerzo </h3>
+                    <ul>
+                        <li> <b>Lugar: </b> Patio Central</li>
+                    </ul>
+                </div>
+
+
+                <div class="item">
+                    <p class="event_time">
+                        <i class="far fa-clock"></i> 14:30 a 15:30 hrs
+                    </p>
+                    <h3 class="event_title"><i class="fas fa-desktop"></i> Workshops </h3>
+                    <ul class="lista_workshops">
+                        <li> <span class="lugar_span">CITT Melipilla</span> <span class="title_span">Workshop
+                                Ingeniosas, <span class="pinkText">¡Más mujeres en las TICs ahora!</span></span>
+                            <br>
+                            <span class="person_span">Ingeniosas </span>
+                        </li>
+
+                        <li> <span class="lugar_span">Escenario Central</span> <span class="title_span">Workshop
+                                Robótica
+                            </span>
+                            <br>
+                            <span class="person_span">Rodrigo Quevedo, Robotics Lab </span>
+                        </li>
+                        <li> <span class="lugar_span">Hall Auditorio</span> <span class="title_span">Workshop
+                                VideoJuegos - Final LOL
+                            </span>
+                            <br>
+                            <span class="person_span">Leandro Lopez, MSI</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <p class="event_time">
+                        <i class="far fa-clock"></i> 15:30 a 16:00 hrs
+                    </p>
+                    <h3 class="event_title">Premiación Desafío CITT</h3>
+                    <ul>
+                        <li> <b>Lugar: </b> Escenario Central</li>
+                    </ul>
+                </div>
+
+                <div class="item last_item">
+                    <p class="event_time">
+                        <i class="far fa-clock"></i> 16:00 a 17:00 hrs
+                    </p>
+                    <h3 class="event_title">Final Proyecto Estrella</h3>
+                    <ul>
+                        <li> <b>Lugar: </b> Escenario Central</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  <section class="hero_partners">
+        <div class="container">
+            <img src="./img/partners.jpg" alt="Partners">
+        </div>
+    </section> -->
+
+    <div class="hero__inscripcion" id="inscripcion">
+        <img class="hero__inscripcion__bg" src="./img/bg_inscripcion2.jpg" alt="fondo">
+        <div style="text-align: center;" class="container">
+            <h3 class="section_title">
+                Inscripción Encuentro Anual CITT
+            </h3>
+
+            <div class="hero__inscripcion__info">
+                <div class="hero__inscripcion__info__horario">
+                    <img src="./img/icons/time_icon.svg" alt="">
+                    <div>
+                        <h4>HORARIO</h4>
+                        <p>8:30 a 17:00 Horas</p>
+                    </div>
+                </div>
+                <div class="hero__inscripcion__info__lugar">
+                    <img src="./img/icons/place_icon.svg" alt="">
+                    <div>
+                        <h4>LUGAR: <br> DUOC UC SEDE MELIPILLA</h4>
+                        <p>Serrano 1105,
+                            Melipilla</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="http://131.221.32.116/inscripcion-evento-duoc-uc/111" target="_blank"> Inscríbete </a>
+        </div>
+    </div>
+
+    <section class="hero__contacto" id="contacto">
+        <div class="container">
+            <h3 class="section_title">
+                Contacto
+            </h3>
+
+            <div class="hero__contacto__informacion">
+                <div class="contacto__informacion__direccion">
+                    <h4>DIRECCIÓN</h4>
+                    <p>Av. Serrano 1105 Melipilla. </p>
+                </div>
+
+                <div class="contacto__informacion__email">
+                    <h4>EMAIL</h4>
+                    <p>rumartinez@duoc.cl</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div style="overflow:hidden;width: 100%;height: 440px;"><iframe width="100%" height="440"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.575484839764!2d-71.21657038439098!3d-33.69405478070483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966255eae610cb2f%3A0xc3fdb55ead51065b!2sDuoc%20UC%3A%20Sede%20Melipilla!5e0!3m2!1ses!2scl!4v1570544920303!5m2!1ses!2scl"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+    </div>
+
+    <section class="rrss">
+        <div class="container">
+            <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+
+
+    <script>
+
+
+
+        let header = document.querySelector("#header")
+        let btn_menu = document.querySelector(".header__menu__icon")
+        let header_nav = document.querySelector(".header__nav")
+        let banner = document.querySelector(".banner__principal")
+
+        // Header Background fade
+        window.onscroll = () => {
+            if (window.pageYOffset > 1) {
+                header.classList.add("header--sticky")
+            } else {
+                header.classList.remove("header--sticky")
+            }
+        }
+
+        window.onresize = window.onload = function () {
+
+            if (window.innerWidth <= 425) {
+                banner.src = "./img/bg/bg_EAC_mobile.png";
+            } else if (window.innerWidth <= 950) {
+                banner.src = "./img/bg/bg_EAC_tablet.png";
+            } else if (window.innerWidth > 950) {
+                banner.src = "./img/bg/bg_EAC_Desktop.png";
+            }
+
+
+        };
+
+        // Menu btn
+        btn_menu.addEventListener("click", (event) => {
+            if (window.getComputedStyle(header_nav, null).opacity == "1") {
+                header_nav.style.opacity = "0"
+            } else {
+                header_nav.style.opacity = "1"
+            }
+        })
+    </script>
+</body>
+
+</html>
