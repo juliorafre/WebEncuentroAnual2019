@@ -22,9 +22,9 @@ html {
 }
 
 .description_desafio {
-  font-size: 15px;
+  font-size: 15px !important;
   color: #2d2d2d !important;
-  font-weight: normal;
+  font-weight: normal !important;
 }
 
 body {
