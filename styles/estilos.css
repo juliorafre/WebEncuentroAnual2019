@@ -327,45 +327,22 @@ body {
 }
 
 .hero_timeline .lista_workshops li .lugar_span {
-  color: #22357f;
-  font-size: 15px;
-  font-weight: 700;
+  color: #273981;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .hero_timeline .lista_workshops li .title_span {
-  color: black;
-  font-size: 13px;
-  font-weight: normal;
+  color: #252525;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .hero_timeline .lista_workshops li .person_span {
   margin-top: 5px;
-  color: blue;
+  color: #2a38ff;
   font-size: 15px;
   font-weight: 600;
-}
-
-.hero_partners {
-  padding: 90px 30px;
-}
-
-.hero_partners .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.hero_partners .container img {
-  width: 100%;
 }
 
 .rrss {
@@ -467,8 +444,42 @@ body {
   margin: 45px 0;
 }
 
-.hero__contacto {
+.hero_partners {
   padding: 60px 20px;
+}
+
+.hero_partners .container {
+  text-align: center;
+}
+
+.hero_partners .container div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 20px 0;
+}
+
+.hero_partners .container div img {
+  width: 250px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 30px;
+}
+
+.hero__contacto {
+  background-color: #F4F4F4;
+  padding: 60px 20px;
+  border-bottom: solid 10px #EC1C6B;
 }
 
 .hero__contacto .container {
